@@ -1,0 +1,192 @@
+/* Основной сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    justify-content: space-between; 
+    background-image: url('belarus.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    position: relative;
+}
+
+body, p {
+    font-family: 'Merriweather', serif; 
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main {
+    flex-grow: 1; 
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.image-gallery img {
+    max-width: 30%;
+    height: auto;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-images {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: nowrap;
+}
+
+.carousel-images figure {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.carousel-images img {
+    width: 66%; 
+    max-width: 1000px; 
+    min-width: 500px; 
+    height: auto;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+    flex-grow: 1; 
+}
+
+
+figcaption small {
+    font-size: 0.75em; 
+    color: #555;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+    
